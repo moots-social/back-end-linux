@@ -54,7 +54,7 @@ services:
 
   api-post:
     container_name: api-post
-    image: emerson757/post-moots-linux:v2
+    image: emerson757/post-moots-linux:v3
     environment:
       - SPRING.KAFKA.BOOTSTRAP-SERVERS=redpanda:19092
       - SPRING.REDIS.HOST=redisDB
@@ -76,7 +76,7 @@ services:
 
   api-usuarios:
     container_name: api-usuarios
-    image: emerson757/usuarios-moots-linux:v2
+    image: emerson757/usuarios-moots-linux:v3
     environment:
       - SPRING.KAFKA.BOOTSTRAP-SERVERS=redpanda:19092
       - SPRING.REDIS.HOST=redisDB
@@ -98,7 +98,7 @@ services:
 
   api-reporte:
     container_name: api-reporte
-    image: emerson757/reporte-moots-linux:v2
+    image: emerson757/reporte-moots-linux:v3
     environment:
       - SPRING.KAFKA.BOOTSTRAP-SERVERS=redpanda:19092
       - SPRING.REDIS.HOST=redisDB
@@ -114,7 +114,7 @@ services:
 
   api-notificacao:
     container_name: api-notificacao
-    image: emerson757/notificacao-moots-linux:v2
+    image: emerson757/notificacao-moots-linux:v3
     environment:
       - SPRING.KAFKA.BOOTSTRAP-SERVERS=redpanda:19092
       - SPRING.REDIS.HOST=redisDB
@@ -130,7 +130,7 @@ services:
 
   api-busca:
     container_name: api-busca
-    image: emerson757/busca-moots-linux:v2
+    image: emerson757/busca-moots-linux:v3
     environment:
       - SPRING_ELASTICSEARCH_URIS=elasticsearch:9200
       - SPRING.KAFKA.BOOTSTRAP-SERVERS=redpanda:19092
@@ -148,7 +148,7 @@ services:
 
   api-gateway:
     container_name: api-gateway
-    image: emerson757/gateway-moots-linux:v1
+    image: emerson757/gateway-moots-linux:v3
     ports:
       - 8080:8080
     depends_on:
