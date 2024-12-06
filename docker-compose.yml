@@ -54,7 +54,7 @@ services:
 
   api-post:
     container_name: api-post
-    image: emerson757/post-moots-servidor:v2
+    image: emerson757/post-moots-servidor:v3
     environment:
       - SPRING.KAFKA.BOOTSTRAP-SERVERS=redpanda:19092
       - SPRING.REDIS.HOST=redisDB
