@@ -148,7 +148,7 @@ services:
 
   api-gateway:
     container_name: api-gateway
-    image: emerson757/gateway-moots-servidor:v1
+    image: emerson757/gateway-moots-servidor:v3
     ports:
       - 8080:8080
     depends_on:
